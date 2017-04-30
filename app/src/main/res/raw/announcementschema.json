@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Product", 
+  "description": "A product from Acme's catalog",
+  "type": "object",
+  "properties":
+  {
+     "Announcement":
+     {
+        "description": "The information being broadcasted about an event",
+        "type": "string"
+     },
+     "Date":
+     { 
+        "description": "The date when the event begins",
+        "type": "date"
+     },
+     "Source":
+     { 
+        "description": "The source of the information",
+        "type": "string"
+     },
+     "Concerned Audience":
+     { 
+        "description": "The people for whom the information was broadcasted ",
+        "type": "string"
+     }
+  },
+  "required": ["Announcement", "Date"]
+}
